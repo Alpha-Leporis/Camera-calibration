@@ -18,7 +18,7 @@ Which takes a point in 3D to its projection in pixels in the image. the linear m
 # camera calibration
 We take a single picture of an object of a known geometry this is what we need to fully calibrate the camera. in other words, to determine the projection matrix.
 
-# Extractiing Intrinsic and Extrinsic Matrices
+# Extracting Intrinsic and Extrinsic Matrices
 Once we have determined the projection matrix we can tear it apart to figure out both the internal parameters and the external parameters of the camera. These are called Intrinsic and Extrinsic Matrices.
 
 At this point, the camera is fully calibrated.
