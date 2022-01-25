@@ -10,14 +10,14 @@ import cv2
 import numpy as np
 import glob
 
-# dimensions of checkerboard
+# Dimensions of checkerboard
 CHECKERBOARD = (6,8)
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
 
 objpoints = []
 imgpoints = [] 
 
-# the world coordinates for 3D points
+# The world coordinates for 3D points
 objp = np.zeros((1, CHECKERBOARD[0] * CHECKERBOARD[1], 3), np.float32)
 objp[0,:,:2] = np.mgrid[0:CHECKERBOARD[0], 0:CHECKERBOARD[1]].T.reshape(-1, 2)
 prev_img_shape = None
@@ -47,7 +47,7 @@ cv2.destroyAllWindows()
 
 h,w = img.shape[:2]
 
-# Performing camera calibration
+# Camera Calibration
 ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
 
 print("Camera matrix : \n")
