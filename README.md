@@ -23,17 +23,11 @@ once we have determine the projection matrix we can actually tear it apart to fi
 
 At this point the camera is fully calibrated.
 
-
-# calibration patterns
-sometimes known as a calibration grid or a calibration target is a repeating pattern of known size and spacing. for example checkerboard pattern consists of alternating white and black squares of equal size.
-
-# checkerboard pattern
-camera calibration using checkerboard pattern to get the Intrinsic Matrices depends on the camera calibration accuracy.
-
 # Different types of camera calibration methods
 
-1. **Calibration pattern**: the best way to perform calibration is to capture several images of an object or pattern of known dimensions from different view points.Calibration pattern sometimes known as a calibration grid or a calibration target is a repeating pattern of known size and spacing. example : **checkerboard pattern** - camera calibration using checkerboard pattern to get the Intrinsic Matrices depends on the camera calibration accuracy.
-We can also use **circular patterns** of known dimensions.
+1. **Calibration pattern**:sometimes known as a calibration grid or a calibration target is a repeating pattern of known size and spacing. the best way to perform calibration is to capture several images of an object or pattern of known dimensions from different view points. for example 
+	**checkerboard pattern** - camera calibration using checkerboard pattern to get the Intrinsic Matrices depends on the camera calibration accuracy.
+	We can also use **circular patterns** of known dimensions.
 
 2. **Geometric clues**: Sometimes we have other geometric clues in the scene like straight lines and vanishing points which can be used for calibration.
 
