@@ -50,7 +50,7 @@ f_x, f_y are the x and y focal lengths ( yes, they are usually the same ).
 
 c_x, c_y are the x and y coordinates of the optical center in the image plane. Using the center of the image is usually a good enough approximation.
 
-\gamma is the skew between the axes. It is usually 0. 
+γ is the skew between the axes. It is usually 0. 
 
 
 	
