@@ -11,7 +11,8 @@ so we are gonna develop a method for estimating the external and internal parame
 
 before we can do doing this we first need a model of the camera and this is what we refered as camera model or a forward imaging model which takes from 3D to 2D.
 
-# Linear Camera model - which takes a point in 3D to its projection in pixels in the image. linear model is a single matrix called a projection matrix.so now projection matrix in place we develop a camera calibration method.
+# Linear Camera model
+which takes a point in 3D to its projection in pixels in the image. linear model is a single matrix called a projection matrix.so now projection matrix in place we develop a camera calibration method.
 
 
 # camera calibration
@@ -23,9 +24,11 @@ once we have determine the projection matrix we can actually tear it apart to fi
 At this point the camera is fully calibrated.
 
 
-# calibration patterns - sometimes known as a calibration grid or a calibration target is a repeating pattern of known size and spacing. for example checkerboard pattern consists of alternating white and black squares of equal size.
+# calibration patterns
+sometimes known as a calibration grid or a calibration target is a repeating pattern of known size and spacing. for example checkerboard pattern consists of alternating white and black squares of equal size.
 
-# checkerboard pattern - camera calibration using checkerboard pattern to get the Intrinsic Matrices depends on the camera calibration accuracy.
+# checkerboard pattern
+camera calibration using checkerboard pattern to get the Intrinsic Matrices depends on the camera calibration accuracy.
 
 
 
