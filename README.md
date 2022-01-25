@@ -55,7 +55,7 @@ c_x, c_y are the x and y coordinates of the optical center in the image plane. U
 
 γ is the skew between the axes. It is usually 0. 
 
-# calibration process
+# Calibration process
 The calibration process is to find the 3×3 matrix K, the 3×3 rotation matrix R, and the 3×1 translation vector t using a set of known 3D points (X_w, Y_w, Z_w) and their corresponding image coordinates (u, v). When we get the values of intrinsic and extrinsic parameters the camera is said to be calibrated. 
 
 A camera calibration algorithm has the following inputs and outputs
