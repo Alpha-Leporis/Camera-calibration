@@ -32,7 +32,8 @@ camera calibration using checkerboard pattern to get the Intrinsic Matrices depe
 
 # Different types of camera calibration methods
 
-1. **Calibration pattern**: When we have complete control over the imaging process, the best way to perform calibration is to capture several images of an object or pattern of known dimensions from different view points. The checkerboard based method that we will learn in this post belongs to this category. We can also use circular patterns of known dimensions instead of checker board pattern.
+1. **Calibration pattern**: the best way to perform calibration is to capture several images of an object or pattern of known dimensions from different view points.Calibration pattern sometimes known as a calibration grid or a calibration target is a repeating pattern of known size and spacing. example : **checkerboard pattern** - camera calibration using checkerboard pattern to get the Intrinsic Matrices depends on the camera calibration accuracy.
+We can also use **circular patterns** of known dimensions.
 
 2. **Geometric clues**: Sometimes we have other geometric clues in the scene like straight lines and vanishing points which can be used for calibration.
 
