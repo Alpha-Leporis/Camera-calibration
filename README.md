@@ -66,6 +66,9 @@ A camera calibration algorithm has the following inputs and outputs
 So the matrix is of the form ![alt text](https://github.com/itsmeaby/HackLab-Assignment/blob/main/img/skew%20parameter.png)
 
 
+![alt text](https://github.com/itsmeaby/HackLab-Assignment/blob/main/img/camera-calibration-flowchart.png)
+
+
 
 	
 
