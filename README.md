@@ -52,6 +52,16 @@ c_x, c_y are the x and y coordinates of the optical center in the image plane. U
 
 γ is the skew between the axes. It is usually 0. 
 
+# calibration process
+the calibration process is to find the 3×3 matrix K, the 3×3 rotation matrix R, and the 3×1 translation vector t using a set of known 3D points (X_w, Y_w, Z_w) and their corresponding image coordinates (u, v). When we get the values of intrinsic and extrinsic parameters the camera is said to be calibrated. 
+
+A camera calibration algorithm has the following inputs and outputs
+1. Inputs : A collection of images with points whose 2D image coordinates and 3D world coordinates are known.
+2. Outputs: The 3×3 camera intrinsic matrix, the rotation and translation of each image. 
+
+In OpenCV the camera intrinsic matrix does not have the skew parameter. 
+So the matrix is of the form ![alt text](https://github.com/itsmeaby/HackLab-Assignment/blob/main/img/skew%20parameter.png)
+
 
 	
 
