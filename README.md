@@ -12,11 +12,11 @@ So we are gonna develop a method for estimating the external and internal parame
 Before we can do this we first need a model of the camera and this is what we referred to as a camera model or a forward imaging model which takes from 3D to 2D.
 
 # Linear Camera model
-Which takes a point in 3D to its projection in pixels in the image. the linear model is a single matrix called a projection matrix. so now projection matrix is in place we develop a camera calibration method.
+Which takes a point in 3D to its projection in pixels in the image. The linear model is a single matrix called a projection matrix. So now projection matrix is in place we develop a camera calibration method.
 
 
-# camera calibration
-We take a single picture of an object of a known geometry this is what we need to fully calibrate the camera. in other words, to determine the projection matrix.
+# Camera Calibration
+We take a single picture of an object of a known geometry this is what we need to fully calibrate the camera. In other words, to determine the projection matrix.
 
 # Extracting Intrinsic and Extrinsic Matrices
 Once we have determined the projection matrix we can tear it apart to figure out both the internal parameters and the external parameters of the camera. These are called Intrinsic and Extrinsic Matrices.
@@ -25,7 +25,7 @@ At this point, the camera is fully calibrated.
 
 # Different types of camera calibration methods
 
-1. **Calibration pattern:** Sometimes known as a calibration grid or a calibration target is a repeating pattern of known size and spacing. the best way to perform calibration is to capture several images of an object or pattern of known dimensions from different viewpoints. for example 
+1. **Calibration pattern:** Sometimes known as a calibration grid or a calibration target is a repeating pattern of known size and spacing. The best way to perform calibration is to capture several images of an object or pattern of known dimensions from different viewpoints. For example, 
 	**checkerboard pattern:** camera calibration using checkerboard pattern to get the Intrinsic Matrices depends on the camera calibration accuracy.
 	We can also use **circular patterns** of known dimensions.
 
