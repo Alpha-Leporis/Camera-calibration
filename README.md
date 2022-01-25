@@ -36,6 +36,22 @@ the projection of a 3D point onto the image plane, we first need to transform th
 
 ![alt text](https://github.com/itsmeaby/HackLab-Assignment/blob/main/img/intrinsic%20parameters.png)
 
+Where, P is a 3×4 Projection matrix consisting of two parts — the intrinsic matrix (K) that contains the intrinsic parameters and the extrinsic matrix ( [R | t] ) that is combination of 3×3 rotation matrix R and a 3×1 translation t vector.
+
+![alt text](https://github.com/itsmeaby/HackLab-Assignment/blob/main/img/Projection%20matrix.png)
+
+the intrinsic matrix K is upper triangular 
+
+![alt text](https://github.com/itsmeaby/HackLab-Assignment/blob/main/img/intrinsic%20matrix%20K%20.png)
+
+where,
+
+f_x, f_y are the x and y focal lengths ( yes, they are usually the same ).
+
+c_x, c_y are the x and y coordinates of the optical center in the image plane. Using the center of the image is usually a good enough approximation.
+
+\gamma is the skew between the axes. It is usually 0. 
+
 
 	
 
