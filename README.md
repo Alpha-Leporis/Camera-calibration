@@ -69,6 +69,15 @@ So the matrix is of the form ![alt text](https://github.com/itsmeaby/HackLab-Ass
 ![alt text](https://github.com/itsmeaby/HackLab-Assignment/blob/main/img/camera-calibration-flowchart.png)
 
 
+# Camera Calibration can be done in a step-by-step approach:
+**Step 1**: First define **real-world coordinates** of 3D points using the known size of the checkerboard pattern.
+**World Coordinate System**: Our world coordinates are fixed by this checkerboard pattern that is attached to a wall in the room. Our 3D points are the corners of the squares in the checkerboard. Any corner of the above-board can be chosen to the origin of the world coordinate system. The axes are along the wall, and the axis is perpendicular to the wall. All points on the checkerboard are therefore on the XY plane ( i.e.  = 0 ).
+In the process of calibration, we calculate the camera parameters by a set of known 3D points and their corresponding pixel location in the image.
 
+**Step 2**: Different viewpoints of the check-board image are captured.
+
+**Step 3**: findChessboardCorners() is a method in OpenCV and used to find pixel coordinates (u, v) for each 3D point in different images
+
+**Step 4**: Then calibrateCamera() method is used to find camera parameters.
 	
 
