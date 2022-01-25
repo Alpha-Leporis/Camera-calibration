@@ -1,4 +1,4 @@
-# one of the key problems in computer vision is recovering the 3D structure of a scene from its images.
+# one of the key problems in Computer vision is recovering the 3D structure of a scene from its images.
 
 we have a scene that defined in the world coordinate frame when we reconstructed the scene we would like to know where each point lies in the world coordinate frame say as in milimeters.but what we have is the disposal are images of the scene where points are measured in terms of pixels.
 In order to go from images to full matrix reconstuction we need two things - 
@@ -34,7 +34,7 @@ At this point the camera is fully calibrated.
 3. **Deep Learning based**: When we have very little control over the imaging setup (e.g. we have a single image of the scene), it may still be possible to obtain calibration information of the camera using a Deep Learning based method. 
 
 
-# Camera Calibration using OpenCV
+# Calibration using OpenCV
 the projection of a 3D point onto the image plane, we first need to transform the point from world coordinate system to the camera coordinate system using the extrinsic parameters (Rotation and Translation). 
 
 ![alt text](https://github.com/itsmeaby/HackLab-Assignment/blob/main/img/intrinsic%20parameters.png)
