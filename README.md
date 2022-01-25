@@ -72,13 +72,15 @@ So the matrix is of the form ![alt text](https://github.com/itsmeaby/HackLab-Ass
 # Camera Calibration can be done in a step-by-step approach:
 **Step 1**: First define **real-world coordinates** of 3D points using the known size of the checkerboard pattern.
 
-**World Coordinate System**: Our world coordinates are fixed by this checkerboard pattern that is attached to a wall in the room. Our 3D points are the corners of the squares in the checkerboard. Any corner of the above-board can be chosen to the origin of the world coordinate system. The axes are along the wall, and the axis is perpendicular to the wall. All points on the checkerboard are therefore on the XY plane ( i.e.  = 0 ).
+**World Coordinate System**: world coordinates are fixed by the checkerboard pattern. 3D points are the corners of the squares in the checkerboard. Any corner of the checkerboard board can be chosen to the origin of the world coordinate system. All points on the checkerboard are on the XY plane ( i.e.  = 0 ).
 In the process of calibration, we calculate the camera parameters by a set of known 3D points and their corresponding pixel location in the image.
 For the 3D points, we photograph a checkerboard pattern with known dimensions at many different orientations. The world coordinate is attached to the checkerboard and since all the corner points lie on a plane, we can arbitrarily choose for every point to be 0. Since points are equally spaced in the checkerboard, the coordinates of each 3D point are easily defined by taking one point as reference (0, 0) and defining remaining with respect to that reference point.
 
 **Step 2**: Different viewpoints of the check-board image are captured.
+we keep the checkerboard static and take multiple images of the checkerboard by moving the camera.
+Alternatively, we can also keep the camera constant and photograph the checkerboard pattern at different orientations. The two situations are similar mathematically.
 
-**Step 3**: findChessboardCorners() is a method in OpenCV and used to find pixel coordinates (u, v) for each 3D point in different images
+**Step 3**: findChessboardCorners() is a method in OpenCV and used to find pixel coordinates (u, v) for each 3D point in different images.
 
 **Step 4**: Then calibrateCamera() method is used to find camera parameters.
 	
