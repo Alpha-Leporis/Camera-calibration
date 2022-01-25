@@ -81,9 +81,9 @@ we keep the checkerboard static and take multiple images of the checkerboard by 
 Alternatively, we can also keep the camera constant and photograph the checkerboard pattern at different orientations. The two situations are similar mathematically.
 
 **Step 3**: Find 2D coordinates of checkerboard: We have multiple images of the checkerboard. We also know the 3D location of points on the checkerboard in world coordinates. The last thing we need is the 2D pixel locations of these checkerboard corners in the images.  
-**3.1 Find checkerboard corners:** OpenCV provides a built-in function called findChessboardCorners that looks for a checkerboard and returns the coordinates of the corners.  
-**3.2 Refine checkerboard corners:** OpenCV’s function cornerSubPix takes in the original image, and the location of corners, and looks for the best corner location inside a small neighborhood of the original location. The algorithm is iterative in nature and therefore we need to specify the termination criteria ( e.g. number of iterations and/or the accuracy )
+**3.1 Find checkerboard corners:** OpenCV provides a built-in function called **findChessboardCorners()** that looks for a checkerboard and returns the coordinates of the corners.  
+**3.2 Refine checkerboard corners:** OpenCV’s function **cornerSubPix()** takes in the original image, and the location of corners, and looks for the best corner location inside a small neighborhood of the original location. The algorithm is iterative in nature and therefore we need to specify the termination criteria ( e.g. number of iterations and/or the accuracy )
 
-**Step 4**: findChessboardCorners() is a method in OpenCV and used to find pixel coordinates (u, v) for each 3D point in different images.
+**Step 4**: **findChessboardCorners()** is a method in OpenCV and used to find pixel coordinates (u, v) for each 3D point in different images.
 
 
