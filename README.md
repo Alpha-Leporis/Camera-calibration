@@ -32,12 +32,9 @@ camera calibration using checkerboard pattern to get the Intrinsic Matrices depe
 
 
 # Camera Calibration using OpenCV
-the projection of a 3D point onto the image plane, we first need to transform the point from world coordinate system to the camera coordinate system using the extrinsic parameters (Rotation \mathbf{R} and Translation \mathbf{t}). 
+the projection of a 3D point onto the image plane, we first need to transform the point from world coordinate system to the camera coordinate system using the extrinsic parameters (Rotation and Translation). 
 
-
-
-
-
+![alt text](https://github.com/itsmeaby/HackLab-Assignment/blob/main/img/intrinsic%20parameters.png)
 
 
 	
