@@ -30,6 +30,14 @@ sometimes known as a calibration grid or a calibration target is a repeating pat
 # checkerboard pattern
 camera calibration using checkerboard pattern to get the Intrinsic Matrices depends on the camera calibration accuracy.
 
+# camera calibration types
+
+1. Calibration pattern: When we have complete control over the imaging process, the best way to perform calibration is to capture several images of an object or pattern of known dimensions from different view points. The checkerboard based method that we will learn in this post belongs to this category. We can also use circular patterns of known dimensions instead of checker board pattern.
+
+2. Geometric clues: Sometimes we have other geometric clues in the scene like straight lines and vanishing points which can be used for calibration.
+
+3. Deep Learning based: When we have very little control over the imaging setup (e.g. we have a single image of the scene), it may still be possible to obtain calibration information of the camera using a Deep Learning based method. 
+
 
 # Camera Calibration using OpenCV
 the projection of a 3D point onto the image plane, we first need to transform the point from world coordinate system to the camera coordinate system using the extrinsic parameters (Rotation and Translation). 
@@ -61,6 +69,7 @@ A camera calibration algorithm has the following inputs and outputs
 
 In OpenCV the camera intrinsic matrix does not have the skew parameter. 
 So the matrix is of the form ![alt text](https://github.com/itsmeaby/HackLab-Assignment/blob/main/img/skew%20parameter.png)
+
 
 
 	
