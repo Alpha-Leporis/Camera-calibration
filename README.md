@@ -31,6 +31,11 @@ sometimes known as a calibration grid or a calibration target is a repeating pat
 camera calibration using checkerboard pattern to get the Intrinsic Matrices depends on the camera calibration accuracy.
 
 
+# Camera Calibration using OpenCV
+the projection of a 3D point onto the image plane, we first need to transform the point from world coordinate system to the camera coordinate system using the extrinsic parameters (Rotation \mathbf{R} and Translation \mathbf{t}). 
+
+
+
 
 
 
