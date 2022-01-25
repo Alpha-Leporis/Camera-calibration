@@ -1,4 +1,4 @@
-# one of the key problems in Computer vision is recovering the 3D structure of a scene from its images.
+# One of the Key problems in Computer vision is recovering the 3D structure of a scene from its images.
 
 We have a scene that is defined in the world coordinate frame when we reconstructed the scene we would like to know where each point lies in the world coordinate frame say as in millimeters. But what we have is the disposal are images of the scene where points are measured in terms of pixels.
 To go from images to full matrix reconstruction, we need two things - 
