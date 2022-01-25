@@ -68,6 +68,9 @@ So the matrix is of the form ![alt text](https://github.com/itsmeaby/HackLab-Ass
 
 ![alt text](https://github.com/itsmeaby/HackLab-Assignment/blob/main/img/camera-calibration-flowchart.png)
 
+**Required libraries:**
+**OpenCV** library in python is a computer vision library, Mostly used for image processing, video processing, analysis, facial recognition, detection, etc.
+**Numpy** is a general-purpose array-processing package. It provides a high-performance multidimensional array object and tools for working with these arrays.
 
 # Camera Calibration can be done in a step-by-step approach:
 **Step 1**: First define **real-world coordinates** of 3D points using the known size of the checkerboard pattern.
