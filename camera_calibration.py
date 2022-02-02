@@ -34,7 +34,11 @@ for fname in images:
     
     # Finding the chess board corners
     ret, corners = cv2.findChessboardCorners(gray, CHECKERBOARD, cv2.CALIB_CB_ADAPTIVE_THRESH + cv2.CALIB_CB_FAST_CHECK + cv2.CALIB_CB_NORMALIZE_IMAGE)
-    
+
+    # CALIB_CB_ADAPTIVE_THRESH - Use adaptive thresholding to convert the image to black and white, rather than a fixed threshold level.
+    # CALIB_CB_FAST_CHECK - Run a fast check on the image that looks for chessboard corners.
+    # CALIB_CB_NORMALIZE_IMAGE - Normalize the image gamma with equalizeHist before applying fixed or adaptive thresholding.
+	
     """
 	  If desired number of corner are detected,
 	  we refine the pixel coordinates and display
@@ -44,7 +48,7 @@ for fname in images:
         objpoints.append(objp)
         
         # Refining pixel coordinates for given 2d points.
-        corners2 = cv2.cornerSubPix(gray, corners, (11,11),(-1,-1), criteria)
+        corners2 = cv2.cornerSubPix(gray, corners, (11,11),(-1,-1), criteria) # cornerSubPix() - Sub-pixel accurate corner locator is based on the observation that every vector from the center q to a point
         
         imgpoints.append(corners2)
 
