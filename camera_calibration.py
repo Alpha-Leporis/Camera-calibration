@@ -13,7 +13,8 @@ import glob
 # Dimensions of checkerboard
 CHECKERBOARD = (6,8)
 
-# termination criteria
+# Defining the algorithm termination criteria
+# In this case the maximum number of iterations is set to 30 and epsilon = 0.001
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
 
 # Arrays to store object points and image points from all the images.
