@@ -36,10 +36,10 @@ for fname in images:
     ret, corners = cv2.findChessboardCorners(gray, CHECKERBOARD, cv2.CALIB_CB_ADAPTIVE_THRESH + cv2.CALIB_CB_FAST_CHECK + cv2.CALIB_CB_NORMALIZE_IMAGE)
     
     """
-	    If desired number of corner are detected,
-	    we refine the pixel coordinates and display
-	    them on the images of checker board
-	"""
+	  If desired number of corner are detected,
+	  we refine the pixel coordinates and display
+	  them on the images of checker board
+    """
     if ret == True:
         objpoints.append(objp)
         
